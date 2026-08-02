@@ -1,11 +1,15 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+ import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
     <>
-      Estatery app
+      <Navbar />
+
+     <MyFooter /> 
     </>
   );
 }
 
-export default App;
+export default App; 

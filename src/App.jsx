@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { HomePage } from "./pages/HomePage";
-import { AgentPage } from "./pages/AgentPage";
-import ListingPage from "./pages/HouseListingPage";
-import LoginPage from "./pages/LoginPage";
-import { AbooutusPage } from "./pages/AbooutusPage";
-import ContactPage from "./pages/ContactPage";
-import HouseDetailsPage from "./pages/HouseDetailsPage";
-import { AgentDetailsPage } from "./pages/AgentDetailsPage";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import { HomePage } from "./pages/Home/HomePage";
+import { AgentPage } from "./pages/AgentPage/AgentPage";
+import ListingPage from "./pages/HouseListing/HouseListing";
+import LoginPage from "./pages/Login/LoginPage";
+import { AbooutusPage } from "./pages/AboutUs/AboutUs";
+import ContactPage from "./pages/ContactUs/ContactPage";
+import HouseDetailsPage from "./pages/HomeDetails/HouseDetailsPage";
+import { AgentDetailsPage } from "./pages/AgentDetails/AgentDetails";
 
 function App() {
   return (

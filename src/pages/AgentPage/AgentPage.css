@@ -1,0 +1,20 @@
+.agents-page { color: #242424; }
+.agents-page__crumbs { height: 48px; background: #f4f4f4; display: flex; align-items: center; gap: 12px; padding: 0 max(calc((100vw - 1080px) / 2), 24px); font-size: 13px; }
+.agents-page__crumbs b, .agents-page__crumbs em { color: #aeb1b6; font-style: normal; }
+.agents-page__content { max-width: 1080px; margin: 0 auto; padding: 53px 0 99px; }
+.agents-page h1 { font-size: 39px; line-height: 1; margin: 0 0 36px; letter-spacing: -1.4px; }
+.agents-page__toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.agents-page__toolbar form { display: flex; height: 40px; }
+.agents-page__toolbar input { width: 260px; border: 1px solid #dbdce0; border-radius: 9px 0 0 9px; padding: 0 16px; font: inherit; font-size: 13px; outline-color: #285594; }
+.agents-page__toolbar form button, .agents-page__more { border: 0; border-radius: 0 8px 8px 0; background: #285594; color: #fff; font: 600 12px inherit; padding: 0 19px; cursor: pointer; }
+.agents-page__sort { border: 0; background: transparent; color: #74777d; font: 13px inherit; cursor: pointer; }
+.agents-page__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.agent-card { height: 378px; background: #f3f3f3; border: 1px solid #e0e1e3; border-radius: 8px; overflow: hidden; position: relative; text-decoration: none; color: inherit; }
+.agent-card > img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .2s ease; }
+.agent-card:hover > img { transform: scale(1.03); }
+.agent-card__info { position: absolute; inset: auto 13px 13px; padding: 17px 24px 12px; background: #fff; border: 1px solid #e6e6e6; border-radius: 8px; }
+.agent-card__info h2 { margin: 0 0 11px; font-size: 18px; }
+.agent-card__info p { margin: 0 0 9px; color: #74777d; font-size: 13px; }
+.agents-page__more { display: block; margin: 26px auto 0; height: 40px; border-radius: 8px; }
+@media (max-width: 800px) { .agents-page__content { padding: 48px 24px 72px; } .agents-page__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .agents-page__toolbar input { width: 190px; } .agents-page__grid { grid-template-columns: 1fr; } }

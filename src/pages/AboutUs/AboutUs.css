@@ -1,0 +1,191 @@
+aboutus-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+}
+
+.aboutus-breadcrumb {
+  padding: 16px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+.aboutus-breadcrumb-sep {
+  margin: 0 6px;
+}
+.aboutus-breadcrumb-active {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.aboutus-hero {
+  text-align: center;
+  padding: 40px 0 30px;
+}
+.aboutus-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 12px;
+  color: #1a1a1a;
+}
+.aboutus-hero p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.aboutus-hero-image {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+/* Our Vision */
+.aboutus-vision {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.aboutus-vision h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.aboutus-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.aboutus-vision-card {
+  padding: 20px;
+}
+.aboutus-vision-icon {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 16px;
+}
+.aboutus-vision-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.aboutus-vision-card p {
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Our Story / Our Mission (shared two-column layout) */
+.aboutus-story,
+.aboutus-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.aboutus-story-image,
+.aboutus-mission-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.aboutus-story-text h2,
+.aboutus-mission-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+.aboutus-story-text p,
+.aboutus-mission-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.aboutus-btn {
+  background: #2952e3;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.aboutus-btn:hover {
+  background: #1e40c0;
+}
+
+/* Meet The Team */
+.aboutus-team {
+  text-align: center;
+}
+.aboutus-team h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.aboutus-team-subtitle {
+  color: #666;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.aboutus-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.aboutus-team-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.aboutus-team-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.aboutus-team-info {
+  background: #fff;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px;
+  position: relative;
+  border-radius: 8px;
+  margin-inline: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.aboutus-team-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+.aboutus-team-info p {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+.aboutus-team-social {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutus-vision-grid,
+  .aboutus-team-grid {
+    grid-template-columns: 1fr;
+  }
+  .aboutus-story,
+  .aboutus-mission {
+    grid-template-columns: 1fr;
+  }
+  .aboutus-mission {
+    direction: ltr;
+  }
+}

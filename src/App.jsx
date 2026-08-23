@@ -6,7 +6,7 @@ import { HomePage } from "./pages/Home/HomePage";
 import { AgentPage } from "./pages/AgentPage/AgentPage";
 import ListingPage from "./pages/HouseListing/HouseListing";
 import LoginPage from "./pages/Login/LoginPage";
-import { AbooutusPage } from "./pages/AboutUs/AboutUs";
+import  AboutusPage from "./pages/AboutUs/AboutUs";
 import ContactPage from "./pages/ContactUs/ContactPage";
 import HouseDetailsPage from "./pages/HomeDetails/HouseDetailsPage";
 import { AgentDetailsPage } from "./pages/AgentDetails/AgentDetails";
@@ -19,7 +19,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AbooutusPage />} />
+          <Route path="/about" element={<AboutusPage />} />
           <Route path="/agents" element={<AgentPage />} />
           <Route path="/agents/:id" element={<AgentDetailsPage />} />
           <Route path="/listings" element={<ListingPage />} />

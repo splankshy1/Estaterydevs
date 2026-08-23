@@ -16,10 +16,10 @@ function AboutUs() {
       </div>
 
       <img
-        src="/images/about-team-meeting.jpg"
-        alt="Team meeting"
-        className="aboutus-hero-image"
-      />
+  src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg"
+  alt="Team meeting"
+  className="aboutus-hero-image"
+/>
 
       {/* Our Vision */}
       <section className="aboutus-vision">
@@ -46,27 +46,27 @@ function AboutUs() {
       {/* Our Story */}
       <section className="aboutus-story">
         <img
-          src="/images/about-handshake.jpg"
-          alt="Team handshake"
-          className="aboutus-story-image"
-        />
+  src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg"
+  alt="Team handshake"
+  className="aboutus-story-image"
+/>
         <div className="aboutus-story-text">
           <h2>Our Story</h2>
           <p>
-            Estatery is proud to be a trusted leader in real estate, offering
+            RealPro is proud to be a trusted leader in real estate, offering
             comprehensive solutions and professional services in the property
             industry. With over 10 years of experience, we continue to grow
             and innovate, upholding a tradition of quality and reliability.
           </p>
           <p>
-            At Estatery, we are committed to putting clients first, dedicated
+            At RealPro, we are committed to putting clients first, dedicated
             to helping them find their dream homes or valuable investment
             opportunities. Our team of seasoned experts is always ready to
             share deep market insights and knowledge to provide clients with
             the best options available.
           </p>
           <p>
-            Estatery is more than just a real estate company — we are a
+            RealPro is more than just a real estate company — we are a
             reliable partner, walking with you every step of the way in
             building your home and growing your investments with confidence.
           </p>
@@ -79,7 +79,7 @@ function AboutUs() {
         <div className="aboutus-mission-text">
           <h2>Our Mission</h2>
           <p>
-            At Estatery, our mission is to be a trusted partner in every real
+            At RealPro, our mission is to be a trusted partner in every real
             estate journey. We are committed to providing expert guidance
             and optimal solutions to help clients realize their dreams of an
             ideal home or a rewarding investment opportunity.
@@ -87,46 +87,46 @@ function AboutUs() {
           <p>
             We prioritize our clients at every step and strive to create
             sustainable value for both the community and the real estate
-            market. Estatery is not just about building properties — we build
+            market. RealPro is not just about building properties — we build
             trust, peace of mind, and a prosperous future for all our
             clients.
           </p>
           <button className="aboutus-btn">Explore Now</button>
         </div>
         <img
-          src="/images/about-skyscrapers.jpg"
-          alt="City skyscrapers"
-          className="aboutus-mission-image"
-        />
+  src="https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg"
+  alt="City skyscrapers"
+  className="aboutus-mission-image"
+/>
       </section>
 
       {/* Meet The Team */}
       <section className="aboutus-team">
         <h2>Meet The Team</h2>
         <p className="aboutus-team-subtitle">
-          Get to know the dedicated professionals behind Estatery — a team of
+          Get to know the dedicated professionals behind RealPro — a team of
           experienced experts passionate about guiding you through every step
           of your real estate journey.
         </p>
         <div className="aboutus-team-grid">
           <TeamCard
-            img="/images/team-1.jpg"
-            name="Rachel Dan"
-            role="CFO - Chief Financial Officer"
-            social={["in"]}
-          />
-          <TeamCard
-            img="/images/team-2.jpg"
-            name="Rachel Dan"
-            role="CEO - Chief Executive Officer"
-            social={["x", "in"]}
-          />
-          <TeamCard
-            img="/images/team-3.jpg"
-            name="Rachel Dan"
-            role="Sales Director"
-            social={["x", "in"]}
-          />
+  img="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg"
+  name="Rachel Dan"
+  role="CFO - Chief Financial Officer"
+  social={["in"]}
+/>
+<TeamCard
+  img="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+  name="Rachel Dan"
+  role="CEO - Chief Executive Officer"
+  social={["x", "in"]}
+/>
+<TeamCard
+  img="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+  name="Rachel Dan"
+  role="Sales Director"
+  social={["x", "in"]}
+/>
         </div>
       </section>
     </div>

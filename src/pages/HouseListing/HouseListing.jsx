@@ -22,35 +22,35 @@ const ListingPage = () => {
       <div className="listing-filters">
         <input type="text" placeholder="What are you looking for" />
         <select>
-  <option>Status</option>
-  <option>For Rent</option>
-  <option>For Sale</option>
-</select>
-<select>
-  <option>Type</option>
-  <option>Apartment</option>
-  <option>Condo</option>
-  <option>House</option>
-  <option>Land</option>
-  <option>Manufactured</option>
-  <option>Townhome</option>
-  <option>Villa</option>
-</select>
-<select>
-  <option>Beds</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5+</option>
-</select>
-<select>
-  <option>Baths</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4+</option>
-</select>
+          <option>Status</option>
+          <option>For Rent</option>
+          <option>For Sale</option>
+        </select>
+        <select>
+          <option>Type</option>
+          <option>Apartment</option>
+          <option>Condo</option>
+          <option>House</option>
+          <option>Land</option>
+          <option>Manufactured</option>
+          <option>Townhome</option>
+          <option>Villa</option>
+        </select>
+        <select>
+          <option>Beds</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5+</option>
+        </select>
+        <select>
+          <option>Baths</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
         <button className="reset-btn">↺</button>
         <button className="filter-icon-btn">▼</button>
         <button className="search-btn">Search</button>
@@ -99,8 +99,13 @@ const ListingPage = () => {
                 <span>{house.sqft} sqft</span>
               </div>
               <div className="listing-bottom">
-                <span className="listing-price">{house.price}<small>/month</small></span>
-                <Link to={`/listings/${house.id}`} className="view-detail-btn">View Detail</Link>
+                <span className="listing-price">
+                  {house.price}
+                  <small>/month</small>
+                </span>
+                <Link to={`/listings/${house.id}`} className="view-detail-btn">
+                  View Detail
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { HomePage } from "./pages/Home/HomePage";
@@ -10,12 +10,23 @@ import  AboutusPage from "./pages/AboutUs/AboutUs";
 import ContactPage from "./pages/ContactUs/ContactPage";
 import HouseDetailsPage from "./pages/HomeDetails/HouseDetailsPage";
 import { AgentDetailsPage } from "./pages/AgentDetails/AgentDetails";
+import LaunchPage from "./pages/Launch/LaunchPage";
 
 function App() {
   return (
     <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
+
+function AppRoutes() {
+  const { pathname } = useLocation();
+  const isLaunchPage = pathname === "/launch";
+
+  return (
       <div className="app">
-        <Navbar />
+        {!isLaunchPage && <Navbar />}
 
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -26,11 +37,11 @@ function App() {
           <Route path="/listings/:id" element={<HouseDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/launch" element={<LaunchPage />} />
         </Routes>
 
-        <Footer />
+        {!isLaunchPage && <Footer />}
       </div>
-    </BrowserRouter>
   );
 }
 

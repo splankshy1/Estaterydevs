@@ -1,0 +1,208 @@
+/* =========================
+   AGENTS SECTION
+========================= */
+
+.agents-section {
+  width: 100%;
+  padding: 80px 24px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.agents-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   LEFT HEADER COLUMN
+========================= */
+
+.agents-header-col {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.agents-subtitle {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.agents-title {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #092746;
+}
+
+.agents-description {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.become-agent-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  background: #123f6b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.become-agent-btn:hover {
+  background: #0c3155;
+  transform: translateY(-2px);
+}
+
+/* Carousel Control Arrows */
+.agents-carousel-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.control-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+  color: #123f6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background: #123f6b;
+  color: #ffffff;
+  border-color: #123f6b;
+}
+
+/* =========================
+   RIGHT CARDS COLUMN
+========================= */
+
+.agents-cards-col {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   AGENT CARD (Figma Match)
+========================= */
+
+.agent-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 440px; /* Fixed height ensures uniform, clean cards */
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+}
+
+.agent-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.agent-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the entire width and height completely with NO side bars */
+  object-position: top center; /* Focuses on the face and upper body down to the belt/waist */
+  display: block;
+}
+
+/* Floating Info Card Overlay */
+.agent-info-card {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  right: 20px;
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e2e8f0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.agent-name {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.agent-detail {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.agent-detail span {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 960px) {
+  .agents-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+
+  .agents-header-col {
+    flex: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .agents-cards-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .agents-cards-col {
+    grid-template-columns: 1fr;
+  }
+}

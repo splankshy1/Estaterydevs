@@ -1,0 +1,203 @@
+
+/* =================================
+   MAIN BANNER
+================================= */
+
+.explore-banner-section {
+  width: cal (100% -30px);
+  max-width: 1200px;
+  height: 246px;
+  min-height: 246px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #173b87;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* =================================
+   BACKGROUND IMAGE
+================================= */
+
+.explore-showcase-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 115%;
+  max-width: none;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: right center;
+
+  display: block;
+  z-index: 1;
+}
+
+/* =================================
+   CONTENT CONTAINER
+================================= */
+
+.explore-banner-container {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* =================================
+   LEFT CONTENT
+================================= */
+
+.explore-content-col {
+  width: 55%;
+  padding: 20px 30px;
+
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.explore-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.explore-logo-icon {
+  width: 15px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.explore-brand-text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.explore-title {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  max-width: 410px;
+  margin: 0 0 10px;
+}
+
+.explore-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 16px;
+  max-width: 400px;
+}
+
+.explore-btn {
+  background: #fff;
+  color: #173b87;
+  border: none;
+  border-radius: 7px;
+
+  padding: 14px 20px;
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  width: 130px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.explore-btn:hover {
+  background: #e8efff;
+  transform: translateY(-2px);
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+  .explore-banner-section {
+    width: calc(100% - 24px);
+    height: 230px;
+    min-height: 230px;
+  }
+
+  .explore-showcase-image {
+    width: 115%;
+    object-position: right center;
+  }
+
+  .explore-content-col {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .explore-title {
+    font-size: 17px;
+    max-width: 350px;
+  }
+
+  .explore-description {
+    font-size: 9px;
+    max-width: 300px;
+  }
+
+  .explore-btn {
+    padding: 11px 20px;
+    width: 125px;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+  .explore-banner-section {
+    width: calc(100% - 20px);
+    height: 260px;
+    min-height: 260px;
+  }
+
+  .explore-showcase-image {
+    width: 120%;
+    object-position: right center;
+    opacity: 0.55;
+  }
+
+  .explore-content-col {
+    width: 85%;
+    padding: 20px 16px;
+  }
+
+  .explore-title {
+    font-size: 16px;
+    max-width: 260px;
+  }
+
+  .explore-description {
+    font-size: 9px;
+    max-width: 230px;
+  }
+
+  .explore-btn {
+    padding: 10px 18px;
+    width: 120px;
+  }
+}

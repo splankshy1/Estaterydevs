@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 60px 24px;
+  background-color: #ffffff;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+/* Left Content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+  margin-bottom: -30px;
+}
+
+.highlight-text {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Right Image Layout */
+.hero-image-wrapper {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark Glass Overlay Card */
+.hero-floating-card {
+  position: absolute;
+  bottom: 24px;
+  right: 2px;
+  background: rgba(30, 48, 80, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #ffffff;
+}
+
+.floating-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.white-number-badge {
+  background-color: #ffffff;
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 1.15rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.badge-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.floating-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bold-stat {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stat-label {
+  white-space: nowrap;
+}

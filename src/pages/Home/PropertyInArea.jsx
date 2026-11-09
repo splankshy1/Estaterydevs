@@ -9,7 +9,7 @@ const propertiesData = [
     title: "High-Rise Townhouse",
     image: "/images/mansion1.png",
     gridClass: "card-narrow",
-  },
+      },
   {
     id: 2,
     title: "High-Rise Townhouse",

@@ -7,7 +7,7 @@ import AboutUs from './AboutUs';
 import PropertyInArea from './PropertyInArea';
 import AgentsSection from './AgentsSection';
 import ExploreBanner from './ExploreBanner';
-import OurBlog from './OurBlogOurBlog';
+import OurBlog from './OurBlog';
 
 
 

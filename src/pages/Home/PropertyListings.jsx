@@ -1,87 +1,96 @@
-import React from 'react';
-import { MapPin, Bed, Bath, Move } from 'lucide-react';
-import './PropertyListings.css';
+import React from "react";
+import { MapPin, Bed, Bath, Move } from "lucide-react";
+import "./PropertyListings.css";
 
 const properties = [
   {
     id: 1,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-1.png'
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-1.png",
+    link: "/listings/1",
   },
   {
     id: 2,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-2.png'
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-2.png",
+    link: "/listings/2",
+
   },
   {
     id: 3,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-3.png'
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-3.png",
+    link: "/listings/3",
   },
   {
     id: 4,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-4.png'
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-4.png",
+    link: "/listings/4",
+
   },
   {
     id: 5,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-5.png'
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-5.png",
+    link: "/listings/5",
+
   },
   {
     id: 6,
-    tag: 'For Rent',
-    title: 'High-Rise Townhouse',
-    location: 'Southwestern Ontario, Ontario, Canada',
+    tag: "For Rent",
+    title: "High-Rise Townhouse",
+    location: "Southwestern Ontario, Ontario, Canada",
     beds: 4,
     baths: 3,
-    sqft: '120/280 sqft',
-    price: '$ 1,239',
-    period: '/Month',
-    image: '/images/property-6.png'
-  }
+    sqft: "120/280 sqft",
+    price: "$ 1,239",
+    period: "/Month",
+    image: "/images/property-6.png",
+    link: "/listings/6",
+
+  },
 ];
 
 export default function PropertyListings() {
   return (
     <section className="pl-section">
       <div className="pl-container">
-        
         {/* Header */}
         <div className="pl-header">
           <span className="pl-subtitle">DISCOVER OUR PROPERTIES</span>
@@ -94,14 +103,16 @@ export default function PropertyListings() {
             <div key={item.id} className="pl-card">
               <div className="pl-image-wrapper">
                 <img src={item.image} alt={item.title} className="pl-image" />
-                <span className={`pl-tag ${item.tag === 'For Sale' ? 'pl-tag-sale' : 'pl-tag-rent'}`}>
+                <span
+                  className={`pl-tag ${item.tag === "For Sale" ? "pl-tag-sale" : "pl-tag-rent"}`}
+                >
                   {item.tag}
                 </span>
               </div>
 
               <div className="pl-card-body">
                 <h3 className="pl-card-title">{item.title}</h3>
-                
+
                 <div className="pl-location">
                   <MapPin size={14} className="pl-loc-icon" />
                   <span>{item.location}</span>
@@ -126,7 +137,9 @@ export default function PropertyListings() {
                     <span className="pl-amount">{item.price}</span>
                     <span className="pl-period">{item.period}</span>
                   </div>
-                  <button className="pl-view-btn">View Detail</button>
+                  <a rel="stylesheet" href={item.link}>
+                    <button className="pl-view-btn">View Detail</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -136,7 +149,6 @@ export default function PropertyListings() {
         <div className="pl-cta-wrapper">
           <button className="pl-cta-btn">View All</button>
         </div>
-
       </div>
     </section>
   );

@@ -16,10 +16,12 @@ export default function Hero() {
             FIND YOUR NEXT <br />
             PERFECT <span className="highlight-text">PLACE</span>
           </h1>
+          <a href="/listings">
           <button className="hero-btn">
             Explore More
             <ArrowRight size={16} />
           </button>
+          </a>
         </div>
 
         {/* Right Image Container */}

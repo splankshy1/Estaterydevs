@@ -8,6 +8,7 @@ import PropertyInArea from './PropertyInArea';
 import AgentsSection from './AgentsSection';
 import ExploreBanner from './ExploreBanner';
 import OurBlog from './OurBlog';
+import Footer from './Footer';
 
 
 
@@ -23,6 +24,7 @@ export const HomePage = () => {
       <AgentsSection/>
       <ExploreBanner/>
       <OurBlog/> 
+      <Footer/>
     </div>
   );
 };

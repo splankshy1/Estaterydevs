@@ -147,7 +147,9 @@ export default function PropertyListings() {
         </div>
 
         <div className="pl-cta-wrapper">
-          <button className="pl-cta-btn">View All</button>
+          <a href="/listings">
+            <button className="pl-cta-btn">View All</button>
+          </a>
         </div>
       </div>
     </section>
